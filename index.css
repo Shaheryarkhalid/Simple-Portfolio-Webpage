@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.Main-Section{
+    height:100vh;
+    width:100%;
+    background-image: url(./Related-Media/images/background.png);
+    background-repeat: no-repeat;
+}
+.Main-Section .Top-Nav{
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Top-Nav img{
+    align-self: center;
+    height: 50px;
+    padding:0 20px;
+}
+.Top-Nav ul{
+    display: flex;
+
+}
+.Top-Nav ul a{
+    text-decoration: none;
+    padding:20px;
+}
+.Top-Nav ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    color:#000;
+}
+.Top-Nav ul a:hover{
+    text-shadow: 0 0 1px #000;
+}
+.Top-Nav form{
+    align-self: center;
+}
+.Top-Nav form input{
+    margin:0 30px;
+    padding:8px;
+    border-radius: 8px;
+    border:1px solid rgba(0, 0,0, 0.8);
+    font-size: 1rem;
+}
+.Top-Nav form input:focus{
+    border:1px solid rgba(0, 0,0, 0.8);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.Main-Section .Content-section{
+    background-image: url(./Related-Media/images/girl.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    height: calc(100vh - 120px);
+}
+.inner-content{
+    position: relative;
+    top:20%;
+    margin:10px  0 0 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Content-section h3{
+    margin-left:10px;
+    font-size: 2.5rem;
+    font-weight: 100;  
+}
+.Content-section h1{
+    font-size: 7rem;
+    font-weight: 500;    
+}
+.Content-section h2{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-left:10px;
+}
+.Content-section .actions{
+    margin:30px 10px;
+}
+.Content-section a{
+    margin: 40px 20px;
+    padding:12px 25px ;
+    background-image: linear-gradient(140deg,#2af7de , #9578c4 90%);
+    text-decoration: none;
+    color:#fff;
+    border-radius: 10px;
+    font-size: 1.05rem;
+}
+.Content-section a:hover{
+    padding: 11px 24px;
+    margin: 40px 21px;
+}
+.inner-content h2 {
+    display: flex;
+}
+.inner-content h2 span{
+    color:#9578c4;
+}
+.inner-content h2 .moving-text{
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width:20px;
+    animation: moving-text-animation 5s steps(18) infinite;
+}
+@keyframes moving-text-animation{
+    0%{width:0ch;}
+    50%{width:15ch;}
+    100%{width:0ch;}
+}
